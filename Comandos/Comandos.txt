@@ -1,1 +1,2 @@
 Para instalar o AutoMapper - install-package AutoMapper.Extensions.Microsoft.DependencyInjection
+Para adicionar migração - Add-Migration "nomedamigracao" -C MeuDbContext
