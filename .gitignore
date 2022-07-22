@@ -1,0 +1,10 @@
+src/App/bin/
+src/App/obj/
+
+src/Bussiness/bin
+src/Bussiness/obj
+
+src/Data/bin
+src/Data/obj
+
+.vs
