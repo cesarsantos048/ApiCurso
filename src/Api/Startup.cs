@@ -2,7 +2,6 @@ using Api.Configurations;
 using Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,6 +25,8 @@ namespace Api
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddIdentityConfiguration(Configuration);
             services.AddAutoMapper(typeof(Startup));
 
             services.WebApiConfig();
@@ -46,7 +47,11 @@ namespace Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                app.UseHsts();
+            }
+            app.UseAuthentication();
             app.UseMvcConfiguration();
 
             

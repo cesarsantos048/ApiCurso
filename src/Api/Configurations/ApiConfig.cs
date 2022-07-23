@@ -36,6 +36,7 @@ namespace Api.Configurations
 
             app.UseRouting();
             app.UseCors();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

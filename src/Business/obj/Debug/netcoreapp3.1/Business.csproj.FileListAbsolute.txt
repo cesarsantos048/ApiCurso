@@ -16,4 +16,3 @@ D:\repos\ApiCurso\src\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
 D:\repos\ApiCurso\src\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
 D:\repos\ApiCurso\src\Business\obj\Debug\netcoreapp3.1\Business.dll
 D:\repos\ApiCurso\src\Business\obj\Debug\netcoreapp3.1\Business.pdb
-D:\repos\ApiCurso\src\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
