@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xIXL+mJy+Q7gordCUMe4dMVp4BiBB63Q2QfRnm9rLygUoUMBTPZP4i0SQ1RbIrf+kpaoHrnIh9DfKgAlGkI0BQ==",
+  "dgSpecHash": "17r+3S89+jwHlGveRSC6sDjRClATJfTJkeJW6wx3iAJkRcIugTUBjbY/xp6JLzbWtYVbiJXFy3zmtThQO+QedQ==",
   "success": true,
   "projectFilePath": "D:\\repos\\ApiCurso\\src\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cesar\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Cesar\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Cesar\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\Cesar\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.27\\microsoft.aspnetcore.authentication.jwtbearer.3.1.27.nupkg.sha512",
     "C:\\Users\\Cesar\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.27\\microsoft.aspnetcore.cryptography.internal.3.1.27.nupkg.sha512",
     "C:\\Users\\Cesar\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.27\\microsoft.aspnetcore.cryptography.keyderivation.3.1.27.nupkg.sha512",
     "C:\\Users\\Cesar\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.27\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.27.nupkg.sha512",

@@ -71,3 +71,4 @@ D:\repos\ApiCurso\src\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protoc
 D:\repos\ApiCurso\src\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\repos\ApiCurso\src\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\repos\ApiCurso\src\Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\repos\ApiCurso\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
