@@ -1,4 +1,5 @@
 ﻿using Api.Dto;
+using Api.Extensions;
 using AutoMapper;
 using Business.Interfaces;
 using Business.Models;
@@ -42,6 +43,7 @@ namespace Api.Controllers
             return fornecedor;
         }
 
+        [AllowAnonymous]
         [HttpGet("ativos")]
         public async Task<List<FornecedorDto>> ObterAtivos()
         {
@@ -49,6 +51,7 @@ namespace Api.Controllers
 
             return fornecedor;
         }
+
 
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<FornecedorDto>> ObterPorId(Guid id)
@@ -60,6 +63,7 @@ namespace Api.Controllers
             return Ok(fornecedor);
         }
 
+        [ClaimsAuthorize("Fornecedores", "Adicionar")]
         [HttpPost]
         public async Task<ActionResult<FornecedorDto>> Adicionar(FornecedorDto fornecedorDto)
         {
@@ -71,6 +75,7 @@ namespace Api.Controllers
             return CustomResponse(fornecedorDto);
         }
 
+        [ClaimsAuthorize("Fornecedores", "Atualizar")]
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<FornecedorDto>> Atualizar(Guid id, FornecedorDto fornecedorDto)
         {
@@ -86,7 +91,7 @@ namespace Api.Controllers
             return CustomResponse(fornecedorDto);
         }
 
-
+        [ClaimsAuthorize("Fornecedores", "Remover")]
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<FornecedorDto>> Excluir(Guid id)
         {
@@ -119,12 +124,12 @@ namespace Api.Controllers
             return CustomResponse(enderecoDto);
         }
 
-        public async Task<FornecedorDto> ObterFornecedorEndereco(Guid id)
+        private async Task<FornecedorDto> ObterFornecedorEndereco(Guid id)
         {
             return _mapper.Map<FornecedorDto>(await _fornecedorRepository.ObterFornecedorEndereco(id));
         }
 
-        public async Task<FornecedorDto> ObterFornecedorProdutosEndereco(Guid id)
+        private async Task<FornecedorDto> ObterFornecedorProdutosEndereco(Guid id)
         {
             return _mapper.Map<FornecedorDto>(await _fornecedorRepository.ObterFornecedorProdutosEndereco(id));
         }
